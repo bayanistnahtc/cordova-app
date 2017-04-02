@@ -1,0 +1,56 @@
+{
+    "cordova-plugin-whitelist": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-whitelist@1"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-social-vk": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-social-vk"
+        },
+        "is_top_level": true,
+        "variables": {
+            "VK_APP_ID": "5916792"
+        }
+    },
+    "cordova-plugin-dialogs": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-dialogs"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-inappbrowser": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-inappbrowser@1.7.0"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-facebook4": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-facebook4"
+        },
+        "is_top_level": true,
+        "variables": {
+            "APP_ID": "580227608852981",
+            "APP_NAME": "simpleapp"
+        }
+    },
+    "com-badrit-macaddress": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/mohamed-salah/MacAddress.git",
+            "subdir": "."
+        },
+        "is_top_level": true,
+        "variables": {}
+    }
+}

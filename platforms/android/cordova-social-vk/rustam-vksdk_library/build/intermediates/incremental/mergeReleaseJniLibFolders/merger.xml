@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="/home/user/Documents/cordovaprjs/testapp/platforms/android/cordova-social-vk/rustam-vksdk_library/libs"><file name="annotations.jar" path="/home/user/Documents/cordovaprjs/testapp/platforms/android/cordova-social-vk/rustam-vksdk_library/libs/annotations.jar"/></source></dataSet><dataSet config="release"><source path="/home/user/Documents/cordovaprjs/testapp/platforms/android/cordova-social-vk/rustam-vksdk_library/src/release/jniLibs"/></dataSet></merger>

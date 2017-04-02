@@ -1,0 +1,177 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"Notification\"><param name=\"ios-package\" value=\"CDVNotification\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"InAppBrowser\"><param name=\"ios-package\" value=\"CDVInAppBrowser\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"SocialVk\"><param name=\"ios-package\" value=\"SocialVk\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"FacebookConnectPlugin\"><param name=\"ios-package\" value=\"FacebookConnectPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<plugin name=\"FacebookConnectPlugin\" value=\"FacebookConnectPlugin\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<access origin=\"https://m.facebook.com\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<access origin=\"https://graph.facebook.com\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<access origin=\"https://api.facebook.com\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<access origin=\"https://*.fbcdn.net\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<access origin=\"https://*.akamaihd.net\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"MacAddressPlugin\"><param name=\"ios-package\" value=\"MacAddressPlugin\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "*-Info.plist": {
+                "parents": {
+                    "CFBundleURLTypes": [
+                        {
+                            "xml": "<array><dict><key>CFBundleTypeRole</key><string>Editor</string><key>CFBundleURLName</key><string>vk5916792</string><key>CFBundleURLSchemes</key><array><string>vk5916792</string></array></dict></array>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<array><dict><key>CFBundleURLSchemes</key><array><string>fb580227608852981</string></array></dict></array>",
+                            "count": 1
+                        }
+                    ],
+                    "LSApplicationQueriesSchemes": [
+                        {
+                            "xml": "<array><string>vkauthorize</string></array>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<array><string>fbapi</string><string>fb-messenger-api</string><string>fbauth2</string><string>fbshareextension</string></array>",
+                            "count": 1
+                        }
+                    ],
+                    "FacebookAppID": [
+                        {
+                            "xml": "<string>580227608852981</string>",
+                            "count": 1
+                        }
+                    ],
+                    "FacebookDisplayName": [
+                        {
+                            "xml": "<string>simpleapp</string>",
+                            "count": 1
+                        }
+                    ],
+                    "NSAppTransportSecurity": [
+                        {
+                            "xml": "<dict><key>NSExceptionDomains</key><dict><key>facebook.com</key><dict><key>NSIncludesSubdomains</key><true /><key>NSThirdPartyExceptionRequiresForwardSecrecy</key><false /></dict><key>fbcdn.net</key><dict><key>NSIncludesSubdomains</key><true /><key>NSThirdPartyExceptionRequiresForwardSecrecy</key><false /></dict><key>akamaihd.net</key><dict><key>NSIncludesSubdomains</key><true /><key>NSThirdPartyExceptionRequiresForwardSecrecy</key><false /></dict></dict></dict>",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "com.rustam"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "com.rustam"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.rustam"
+        },
+        "cordova-social-vk": {
+            "VK_APP_ID": "5916792",
+            "PACKAGE_NAME": "com.rustam"
+        },
+        "cordova-plugin-facebook4": {
+            "APP_ID": "580227608852981",
+            "APP_NAME": "simpleapp",
+            "PACKAGE_NAME": "com.rustam"
+        },
+        "com-badrit-macaddress": {
+            "PACKAGE_NAME": "com.rustam"
+        }
+    },
+    "dependent_plugins": {},
+    "modules": [
+        {
+            "id": "cordova-plugin-dialogs.notification",
+            "file": "plugins/cordova-plugin-dialogs/www/notification.js",
+            "pluginId": "cordova-plugin-dialogs",
+            "merges": [
+                "navigator.notification"
+            ]
+        },
+        {
+            "id": "cordova-plugin-inappbrowser.inappbrowser",
+            "file": "plugins/cordova-plugin-inappbrowser/www/inappbrowser.js",
+            "pluginId": "cordova-plugin-inappbrowser",
+            "clobbers": [
+                "cordova.InAppBrowser.open",
+                "window.open"
+            ]
+        },
+        {
+            "id": "cordova-social-vk.SocialVk",
+            "file": "plugins/cordova-social-vk/www/social-vk.js",
+            "pluginId": "cordova-social-vk",
+            "clobbers": [
+                "SocialVk"
+            ]
+        },
+        {
+            "id": "cordova-plugin-facebook4.FacebookConnectPlugin",
+            "file": "plugins/cordova-plugin-facebook4/www/facebook-native.js",
+            "pluginId": "cordova-plugin-facebook4",
+            "clobbers": [
+                "facebookConnectPlugin"
+            ]
+        },
+        {
+            "id": "com-badrit-macaddress.MacAddress",
+            "file": "plugins/com-badrit-macaddress/www/MacAddress.js",
+            "pluginId": "com-badrit-macaddress",
+            "clobbers": [
+                "window.MacAddress"
+            ]
+        }
+    ],
+    "plugin_metadata": {
+        "cordova-plugin-dialogs": "1.3.2",
+        "cordova-plugin-inappbrowser": "1.7.0",
+        "cordova-plugin-whitelist": "1.3.2",
+        "cordova-social-vk": "1.0.4",
+        "cordova-plugin-facebook4": "1.7.4",
+        "com-badrit-macaddress": "0.2.1"
+    }
+}

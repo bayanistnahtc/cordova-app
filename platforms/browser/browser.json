@@ -1,0 +1,137 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"FacebookConnectPlugin\"><param name=\"browser-package\" value=\"FacebookConnectPluginBrowser\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<plugin name=\"FacebookConnectPlugin\" value=\"FacebookConnectPlugin\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<access origin=\"https://m.facebook.com\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<access origin=\"https://connect.facebook.net\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<access origin=\"https://graph.facebook.com\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<access origin=\"https://api.facebook.com\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<access origin=\"https://*.fbcdn.net\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<access origin=\"https://*.akamaihd.net\" />",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.rustam"
+        },
+        "cordova-social-vk": {
+            "VK_APP_ID": "5916792",
+            "PACKAGE_NAME": "com.rustam"
+        },
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "com.rustam"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "com.rustam"
+        },
+        "cordova-plugin-facebook4": {
+            "APP_ID": "580227608852981",
+            "APP_NAME": "simpleapp",
+            "PACKAGE_NAME": "com.rustam"
+        },
+        "com-badrit-macaddress": {
+            "PACKAGE_NAME": "com.rustam"
+        }
+    },
+    "dependent_plugins": {},
+    "modules": [
+        {
+            "file": "plugins/cordova-social-vk/www/social-vk.js",
+            "id": "cordova-social-vk.SocialVk",
+            "pluginId": "cordova-social-vk",
+            "clobbers": [
+                "SocialVk"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-dialogs/www/notification.js",
+            "id": "cordova-plugin-dialogs.notification",
+            "pluginId": "cordova-plugin-dialogs",
+            "merges": [
+                "navigator.notification"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-dialogs/www/browser/notification.js",
+            "id": "cordova-plugin-dialogs.notification_browser",
+            "pluginId": "cordova-plugin-dialogs",
+            "merges": [
+                "navigator.notification"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-inappbrowser/www/inappbrowser.js",
+            "id": "cordova-plugin-inappbrowser.inappbrowser",
+            "pluginId": "cordova-plugin-inappbrowser",
+            "clobbers": [
+                "cordova.InAppBrowser.open",
+                "window.open"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-inappbrowser/src/browser/InAppBrowserProxy.js",
+            "id": "cordova-plugin-inappbrowser.InAppBrowserProxy",
+            "pluginId": "cordova-plugin-inappbrowser",
+            "runs": true
+        },
+        {
+            "file": "plugins/cordova-plugin-facebook4/www/facebook-browser.js",
+            "id": "cordova-plugin-facebook4.FacebookConnectPluginBrowser",
+            "pluginId": "cordova-plugin-facebook4",
+            "clobbers": [
+                "facebookConnectPlugin"
+            ]
+        },
+        {
+            "file": "plugins/com-badrit-macaddress/www/MacAddress.js",
+            "id": "com-badrit-macaddress.MacAddress",
+            "pluginId": "com-badrit-macaddress",
+            "clobbers": [
+                "window.MacAddress"
+            ]
+        }
+    ],
+    "plugin_metadata": {
+        "cordova-plugin-whitelist": "1.3.2",
+        "cordova-social-vk": "1.0.4",
+        "cordova-plugin-dialogs": "1.3.2",
+        "cordova-plugin-inappbrowser": "1.7.0",
+        "cordova-plugin-facebook4": "1.7.4",
+        "com-badrit-macaddress": "0.2.1"
+    }
+}

@@ -1,0 +1,33 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.rustam"
+        },
+        "cordova-social-vk": {
+            "VK_APP_ID": "5916792",
+            "PACKAGE_NAME": "com.rustam"
+        },
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "com.rustam"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "com.rustam"
+        },
+        "cordova-plugin-facebook4": {
+            "APP_ID": "580227608852981",
+            "APP_NAME": "simpleapp",
+            "PACKAGE_NAME": "com.rustam"
+        },
+        "com-badrit-macaddress": {
+            "PACKAGE_NAME": "com.rustam"
+        }
+    },
+    "dependent_plugins": {}
+}
